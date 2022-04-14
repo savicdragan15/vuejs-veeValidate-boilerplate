@@ -1,6 +1,10 @@
 # VueJs [VeeValidate](https://vee-validate.logaretm.com/v3) Boilerplate [Bootstrap](https://getbootstrap.com/)
 
-### This is a boilerplate VeeValidate validation with custom Bootstrap components
+#### This is a boilerplate VeeValidate validation with custom Bootstrap components
+
+## Demo
+###### CodeSandbox: https://codesandbox.io/s/vuejs-veevalidate-boilerplate-f41mi1
+###### Full screen: https://f41mi1.csb.app
 
 ## Packages
 - [vue](https://vuejs.org) - The Progressive JavaScript Framework
@@ -41,7 +45,7 @@ Copyright (c) 2022 Dragan Savic
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merg˚e, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
