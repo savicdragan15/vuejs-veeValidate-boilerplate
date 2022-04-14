@@ -1,8 +1,8 @@
 # VueJs [VeeValidate](https://vee-validate.logaretm.com/v3) Boilerplate [Bootstrap](https://getbootstrap.com/)
 
-###This is a boilerplate VeeValidate validation with custom Bootstrap components
+### This is a boilerplate VeeValidate validation with custom Bootstrap components
 
-### Packages
+## Packages
 - [vue](https://vuejs.org) - The Progressive JavaScript Framework
 - [vue-router](https://v3.router.vuejs.org) - The official router for Vue.js
 - [vee-validate](https://vee-validate.logaretm.com/v3) - Template Based Form Validation Framework for Vue.js
