@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrapper m-auto pt-4">
+  <div class="home-wrapper m-auto p-4">
     <h1 class="mb-3 text-center">
       VeeValidate Form Validation
     </h1>
