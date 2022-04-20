@@ -3,10 +3,13 @@
 #### This is a boilerplate VeeValidate validation with custom Bootstrap components
 
 ## Demo
-###### CodeSandbox: https://codesandbox.io/s/vuejs-veevalidate-boilerplate-f41mi1
-###### Full screen: https://f41mi1.csb.app
+
+###### CodeSandbox: https://codesandbox.io/s/vuejs-veevalidate-boilerplate-dztfc4
+
+###### Full screen: https://dztfc4.csb.app/
 
 ## Packages
+
 - [vue](https://vuejs.org) - The Progressive JavaScript Framework
 - [vuex](https://v3.vuex.vuejs.org) - Vuex is a state management pattern + library for Vue.js applications.
 - [vue-router](https://v3.router.vuejs.org) - The official router for Vue.js
@@ -16,28 +19,32 @@
 - [vue-toastification](https://www.npmjs.com/package/vue-toastification) - Light, easy and beautiful toasts!
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 MIT License
 

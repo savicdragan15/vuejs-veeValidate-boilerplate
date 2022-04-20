@@ -1,5 +1,5 @@
 {
-  "name": "vuejs-vee-validate-boilerplate",
+  "name": "vuejs-veevalidate-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,5 +36,11 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "keywords": [
+    "bootstrap",
+    "veevalidate",
+    "vuejs"
+  ],
+  "description": "This is a boilerplate VeeValidate validation with custom Bootstrap components"
 }
