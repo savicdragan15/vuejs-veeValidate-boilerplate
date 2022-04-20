@@ -8,6 +8,7 @@
 
 ## Packages
 - [vue](https://vuejs.org) - The Progressive JavaScript Framework
+- [vuex](https://v3.vuex.vuejs.org) - Vuex is a state management pattern + library for Vue.js applications.
 - [vue-router](https://v3.router.vuejs.org) - The official router for Vue.js
 - [vee-validate](https://vee-validate.logaretm.com/v3) - Template Based Form Validation Framework for Vue.js
 - [bootstrap](https://getbootstrap.com) - The most popular HTML, CSS, and JS library in the world

@@ -21,30 +21,28 @@
     >
 
     <!-- Hint Message -->
-    <span
-      v-show="!errorMessages.length && hint"
-      class="hint-message text-muted animate__animated animate__fadeIn animate__faster"
-    >
+    <v-input-hint-message v-if="!errorMessages.length && hint">
       {{ hint }}
-    </span>
+    </v-input-hint-message>
 
     <!-- Error Message -->
-    <span
-      v-show="errorMessages.length"
-      class="error-message animate__animated animate__fadeIn animate__faster text-danger"
-    >
+    <v-input-error-message v-if="errorMessages.length">
       {{ errorMessages[0] }}
-    </span>
+    </v-input-error-message>
   </div>
 </template>
 
 <script>
 import { generateRandomId } from '@/utils/randomIdGenerator'
+import VInputHintMessage from '@/components/UI/Input/VInputHintMessage.vue'
+import VInputErrorMessage from '@/components/UI/Input/VInputErrorMessage.vue'
 
 const SIZES = ['sm', 'md', 'lg']
 
 export default {
   name: 'VInput',
+
+  components: { VInputErrorMessage, VInputHintMessage },
 
   props: {
     value: {
@@ -128,16 +126,5 @@ export default {
 <style scoped lang="scss">
 .form-group {
   margin-bottom: 20px;
-
-  .error-message,
-  .hint-message {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    font-size: 14px;
-    line-height: 1;
-    padding-top: 4px;
-  }
 }
-
 </style>

@@ -1,8 +1,18 @@
 <template>
   <div class="home-wrapper m-auto p-4">
-    <h1 class="mb-3 text-center">
-      VeeValidate Form Validation
-    </h1>
+    <div class="text-center">
+      <h1 class="mb-1">
+        VeeValidate Form Validation
+      </h1>
+      <p class="mt-0">
+        Fill out the form and check the validation
+      </p>
+    </div>
+
+    <!-- Logos -->
+    <logos-section />
+
+    <!-- VeeValidate Validation Observer -->
     <validation-observer
       v-slot="{ invalid }"
       ref="formObserver"
@@ -49,7 +59,7 @@
         </validation-provider>
         <v-button
           class="text-uppercase mt-3"
-          :disabled="loading || invalid"
+          :disabled="getLoading || invalid"
           variant="success"
           block
           @click="onFormSubmit"
@@ -62,9 +72,12 @@
 </template>
 
 <script>
-import VForm from '@/components/VForm.vue'
-import VInput from '@/components/VInput.vue'
-import VButton from '@/components/VButton.vue'
+import VForm from '@/components/UI/VForm.vue'
+import VInput from '@/components/UI/Input/VInput.vue'
+import VButton from '@/components/UI/VButton.vue'
+import LogosSection from '@/views/Home/components/LogosSection.vue'
+
+import { mapGetters, mapMutations } from 'vuex'
 
 export default {
   name: 'HomePage',
@@ -73,11 +86,11 @@ export default {
     VInput,
     VForm,
     VButton,
+    LogosSection,
   },
 
   data() {
     return {
-      loading: false,
       form: {
         firstName: null,
         lastName: null,
@@ -86,18 +99,24 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['getLoading']),
+  },
+
   methods: {
+    ...mapMutations(['setLoading']),
+
     onFormSubmit() {
       const promise = new Promise((resolve => {
         setTimeout(() => {
           resolve('Promise resolved')
-        }, 800)
+        }, 2000)
       }))
 
-      this.loading = true
+      this.setLoading(true)
       promise.then(() => {
         this.$toast.success('Form successfully submitted')
-        this.loading = false
+        this.setLoading(false)
         this.resetForm()
       })
     },

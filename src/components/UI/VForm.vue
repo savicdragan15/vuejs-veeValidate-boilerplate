@@ -1,5 +1,5 @@
 <template>
-  <form class="form-inline">
+  <form>
     <slot />
   </form>
 </template>

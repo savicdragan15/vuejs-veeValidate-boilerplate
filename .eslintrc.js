@@ -44,7 +44,7 @@ module.exports = {
     quotes: [2, 'single', { avoidEscape: true }],
 
     'linebreak-style': 'off',
-    'object-curly-spacing': ["error", "always"],
+    'object-curly-spacing': ['error', 'always'],
 
     // add new line above comment
     'newline-before-return': 'error',
